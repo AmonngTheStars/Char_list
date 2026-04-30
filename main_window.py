@@ -26,20 +26,3 @@ class MainWindow(QMainWindow):
 
         self.setCentralWidget(self.tabs)
 
-app = QApplication(sys.argv)
-app.setStyleSheet("""
-    QWidget {
-        font-size: 16px;
-    }
-
-    QTextEdit {
-        font-size: 16px;
-    }
-
-    QLabel {
-        font-size: 18px;
-    }
-""")
-window = MainWindow()
-window.show()
-sys.exit(app.exec())
